@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MGCI Computer Studies</title>
+  <meta name="description" content="A student-friendly guide to MGCI Computer Studies courses, pathways, and future careers." />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+      --color-bg:#f7f6f2; --color-surface:#f9f8f5; --color-surface-2:#fbfbf9; --color-surface-offset:#edeae5; --color-border:#d4d1ca; --color-text:#28251d; --color-text-muted:#66645f; --color-text-faint:#8c8a84; --color-primary:#01696f; --color-primary-hover:#0c4e54; --color-text-inverse:#f9f8f4; --shadow-sm:0 1px 2px rgba(0,0,0,.06); --shadow-md:0 8px 24px rgba(0,0,0,.08); --radius-sm:.375rem; --radius-md:.75rem; --radius-lg:1.25rem; --radius-full:9999px; --font-body:'Satoshi', sans-serif; --font-display:'Cabinet Grotesk', sans-serif;
+    }
+    [data-theme="dark"] {
+      --color-bg:#171614; --color-surface:#1c1b19; --color-surface-2:#201f1d; --color-surface-offset:#2a2927; --color-border:#393836; --color-text:#efede8; --color-text-muted:#b4b1ab; --color-text-faint:#908d87; --color-primary:#4f98a3; --color-primary-hover:#227f8b; --color-text-inverse:#171614; --shadow-sm:0 1px 2px rgba(0,0,0,.2); --shadow-md:0 12px 32px rgba(0,0,0,.32);
+    }
+    *,:before,:after{box-sizing:border-box} html{scroll-behavior:smooth} body,h1,h2,h3,p,ul{margin:0} body{font-family:var(--font-body);font-size:var(--text-base);background:var(--color-bg);color:var(--color-text);line-height:1.6} img,svg{display:block;max-width:100%} a{color:inherit} button{font:inherit;cursor:pointer}
+    .container{width:min(1100px,calc(100% - 2rem));margin-inline:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:var(--color-primary);color:var(--color-text-inverse);padding:.75rem 1rem;border-radius:var(--radius-sm);z-index:10}
+    header{position:sticky;top:0;background:color-mix(in srgb,var(--color-bg) 88%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in srgb,var(--color-text) 12%, transparent);z-index:5}.nav{display:flex;justify-content:space-between;align-items:center;padding:var(--space-4) 0;gap:var(--space-4)}
+    .brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;font-weight:700}.brand svg{width:2rem;height:2rem}.brand span{font-family:var(--font-display);font-size:var(--text-lg)}
+    .nav-links{display:flex;gap:1rem;flex-wrap:wrap}.nav-links a{text-decoration:none;color:var(--color-text-muted);font-size:var(--text-sm)} .nav-links a:hover{color:var(--color-text)}
+    .theme-toggle{border:1px solid color-mix(in srgb,var(--color-text) 12%, transparent);background:var(--color-surface);color:var(--color-text);padding:.7rem;border-radius:var(--radius-full)}
+    .hero{padding:clamp(4rem,8vw,7rem) 0 var(--space-12)} .eyebrow{display:inline-block;padding:.4rem .8rem;border-radius:var(--radius-full);background:color-mix(in srgb,var(--color-primary) 12%, var(--color-surface));color:var(--color-primary);font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-4)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-8);align-items:center}.hero h1{font-family:var(--font-display);font-size:var(--text-2xl);line-height:1.02;max-width:11ch;margin-bottom:var(--space-4)} .hero p{max-width:62ch;color:var(--color-text-muted);margin-bottom:var(--space-6)}
+    .actions{display:flex;gap:1rem;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.2rem;border-radius:var(--radius-full);text-decoration:none;font-size:var(--text-sm);font-weight:700;border:1px solid transparent}.btn-primary{background:var(--color-primary);color:var(--color-text-inverse)}.btn-primary:hover{background:var(--color-primary-hover)}.btn-secondary{border-color:color-mix(in srgb,var(--color-text) 14%, transparent);background:var(--color-surface)}
+    .panel{background:linear-gradient(180deg,var(--color-surface-2),var(--color-surface));border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:var(--space-6)}
+    .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4);margin-top:var(--space-4)} .kpi{padding:var(--space-4);background:var(--color-bg);border-radius:var(--radius-md);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent)} .kpi strong{display:block;font-family:var(--font-display);font-size:var(--text-xl)} .kpi span{color:var(--color-text-muted);font-size:var(--text-sm)}
+    section{padding:var(--space-12) 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:var(--space-6)} h2{font-family:var(--font-display);font-size:var(--text-xl)} .sub{color:var(--color-text-muted);max-width:60ch}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)} .card{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);border-radius:var(--radius-lg);padding:var(--space-5);box-shadow:var(--shadow-sm)} .card h3{font-size:var(--text-lg);margin-bottom:.4rem} .card p,.card li{color:var(--color-text-muted)} .card ul{padding-left:1.1rem}
+    .path{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4)} .step{padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent)} .step .num{display:inline-flex;width:2rem;height:2rem;border-radius:50%;align-items:center;justify-content:center;background:color-mix(in srgb,var(--color-primary) 14%, var(--color-surface));color:var(--color-primary);font-weight:700;margin-bottom:var(--space-3)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6)} .list{display:grid;gap:var(--space-4)} .mini{padding:var(--space-4);background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);border-radius:var(--radius-md)}
+    .foot{padding:var(--space-10) 0;color:var(--color-text-muted);border-top:1px solid color-mix(in srgb,var(--color-text) 10%, transparent)}
+    @media (max-width: 900px){.hero-grid,.split,.cards,.path{grid-template-columns:1fr}.nav{align-items:flex-start}.nav-links{display:none}.kpis{grid-template-columns:1fr 1fr}}
+    @media (max-width: 560px){.container{width:min(100% - 1rem,1100px)}.kpis{grid-template-columns:1fr}.actions{flex-direction:column}.btn{justify-content:center}}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="MGCI Computer Studies home">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="4" y="6" width="40" height="36" rx="10" stroke="currentColor" stroke-width="3"></rect>
+          <path d="M16 18L12 24L16 30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M32 18L36 24L32 30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M27 15L21 33" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span>MGCI Computer Studies</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#courses">Courses</a>
+        <a href="#pathways">Pathways</a>
+        <a href="#careers">Careers</a>
+        <a href="#skills">Skills</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Career Marketing Assignment</div>
+          <h1>Code, create, and build a future that goes far beyond one path.</h1>
+          <p>MGCI Computer Studies is not just for students who want “straight computer science.” It introduces coding, software design, teamwork, digital problem-solving, and emerging areas like AI and cybersecurity, while opening pathways to college, university, and hands-on tech careers.[web:5][web:8]</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#courses">Explore courses</a>
+            <a class="btn btn-secondary" href="#sources">View source list</a>
+          </div>
+        </div>
+        <aside class="panel" aria-label="Quick facts">
+          <h2 style="font-size:var(--text-lg);margin-bottom:1rem">Why students should care</h2>
+          <p class="sub">Ontario’s current Computer Studies pathway starts with ICD2O in Grade 10, then branches into ICS3U, ICS3C, ICS4U, and ICS4C depending on interests and goals.[web:8][web:9]</p>
+          <div class="kpis">
+            <div class="kpi"><strong>Grade 10</strong><span>ICD2O has no prerequisite.[web:8]</span></div>
+            <div class="kpi"><strong>Grade 11</strong><span>ICS3U and ICS3C are both entry points with no prerequisite.[web:8]</span></div>
+            <div class="kpi"><strong>Grade 12</strong><span>ICS4U requires ICS3U, and ICS4C requires ICS3C.[web:8]</span></div>
+            <div class="kpi"><strong>Toronto jobs</strong><span>Indeed listed 1,618 Toronto-area jobs mentioning cyber security and artificial intelligence in March 2026.[web:11]</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>What you can take</h2>
+            <p class="sub">The strongest marketing message is honest: there is more than one route, and students can start exploring before Grade 12.[web:8]</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>ICD2O</h3>
+            <p>Digital Technology and Innovations in the Changing World introduces coding, hands-on projects, AI, cybersecurity, digital citizenship, and emerging technologies.[web:8][web:9]</p>
+          </article>
+          <article class="card">
+            <h3>ICS3U / ICS3C</h3>
+            <p>Grade 11 courses let students move toward university-focused computer science or college-focused programming, and both can be taken without a prerequisite.[web:8]</p>
+          </article>
+          <article class="card">
+            <h3>ICS4U / ICS4C</h3>
+            <p>Grade 12 courses build advanced programming, software design, teamwork, documentation, and project-management skills using industry-style practices.[web:8][web:16]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pathways">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Possible pathways</h2>
+            <p class="sub">A good pathway is flexible, because students can aim for university, college, certifications, or technical support and networking routes depending on their strengths.[web:8][web:7]</p>
+          </div>
+        </div>
+        <div class="path">
+          <div class="step"><div class="num">1</div><h3>Start early</h3><p>Take ICD2O in Grade 10 to explore coding, AI, cybersecurity, and digital problem-solving before choosing a more specialized path.[web:8]</p></div>
+          <div class="step"><div class="num">2</div><h3>Choose a direction</h3><p>Use ICS3U for university-oriented computer science or ICS3C for college-oriented programming and applied pathways.[web:8]</p></div>
+          <div class="step"><div class="num">3</div><h3>Build proof</h3><p>Create projects, join clubs, and document work so employers or postsecondary programs can see practical skills instead of just marks.[web:5][web:8]</p></div>
+          <div class="step"><div class="num">4</div><h3>Keep options open</h3><p>Possible next steps include software, networking, cybersecurity, IT support, digital media, engineering-related study, or other tech-enabled fields.[web:7][web:8]</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="careers">
+      <div class="container split">
+        <div>
+          <h2>Careers that connect</h2>
+          <p class="sub" style="margin:1rem 0 1.2rem">Ontario’s curriculum highlights careers and emerging technologies, and related school programs show routes into networking, technical support, media production, web design, and certification-aligned learning.[web:8][web:7]</p>
+          <div class="list">
+            <div class="mini"><strong>Cybersecurity</strong><br><span style="color:var(--color-text-muted)">Security work is tied to protecting systems, managing risk, and responding to threats, which makes it attractive for students who like investigation and problem-solving.[web:11][web:14][web:17]</span></div>
+            <div class="mini"><strong>Networking and IT support</strong><br><span style="color:var(--color-text-muted)">School technology programs in Ontario connect networking courses to entry-level careers and certifications like A+ and CCNA-style preparation.[web:7]</span></div>
+            <div class="mini"><strong>Software and digital development</strong><br><span style="color:var(--color-text-muted)">Computer Studies courses focus on programming, software development life-cycle models, modular design, and documented projects.[web:5][web:8]</span></div>
+          </div>
+        </div>
+        <aside class="panel">
+          <h2 style="font-size:var(--text-lg);margin-bottom:1rem">Day-to-day reality</h2>
+          <ul style="padding-left:1.2rem;color:var(--color-text-muted);display:grid;gap:.7rem">
+            <li>Writing, testing, and improving code.[web:5][web:8]</li>
+            <li>Working in teams and using the software development life cycle.[web:8]</li>
+            <li>Solving practical problems, not just memorizing syntax.[web:5][web:8]</li>
+            <li>Documenting work clearly and thinking about ethics, safety, and impact.[web:8][web:16]</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Skills that matter</h2>
+            <p class="sub">The most useful message for high school students is that tech success depends on more than one “dream school” or one employer; it comes from adaptable skills that transfer across many roles.[web:8][web:7]</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card"><h3>Problem-solving</h3><p>Computer Studies courses are built around designing solutions, testing them, and improving them when they fail.[web:5][web:8]</p></article>
+          <article class="card"><h3>Teamwork</h3><p>Ontario course descriptions emphasize collaborative software design and team-managed projects.[web:8][web:16]</p></article>
+          <article class="card"><h3>Adaptability</h3><p>Students work with emerging technologies and changing digital tools, which supports flexibility in future careers.[web:8][web:9]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="container panel">
+        <h2>Source notes</h2>
+        <p class="sub" style="margin:.8rem 0 1rem">This website is designed to pair with a separate citation document, as required by the assignment. All factual claims on the page are based on the listed sources below.[web:5][web:8][web:11]</p>
+        <ul style="padding-left:1.2rem;display:grid;gap:.7rem;color:var(--color-text-muted)">
+          <li><a target="_blank" rel="noopener noreferrer" href="https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/Computer-Studies">MGCI Computer Studies page</a>[web:5]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.dcp.edu.gov.on.ca/en/course-descriptions-and-prerequisites/computer-studies">Ontario Computer Studies course descriptions and prerequisites</a>[web:8]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.dcp.edu.gov.on.ca/en/curriculum/computer-studies/courses-list">Ontario Computer Studies course list</a>[web:9]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://yorkdale.net/yorkdalealc/Courses/Information-and-Technology-Programs">Ontario information and technology program examples</a>[web:7]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://ca.indeed.com/q-full-time-cyber-security,-artificial-intelligence-l-toronto,-on-jobs.html">Indeed Toronto cyber security / AI jobs page</a>[web:11]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://cch.ldcsb.ca/apps/pages/index.jsp?uREC_ID=1109675&type=d&pREC_ID=1376413">Ontario secondary Computer Studies descriptions</a>[web:16]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://kovasys.com/canada-cybersecurity-jobs/">Canada cybersecurity roles overview</a>[web:17]</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://thecanadiancollege.ca/ai-and-cybersecurity-skills-that-future-proof-your-career/">AI and cybersecurity career article</a>[web:14]</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      Built as a practical, student-focused marketing website for the MGCI Computer Studies field, with citations prepared separately to match assignment requirements.[web:5][web:8]
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const t=document.querySelector('[data-theme-toggle]');
+      const r=document.documentElement;
+      let d=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      r.setAttribute('data-theme',d);
+      const update=()=>{t.textContent=d==='dark'?'☀':'◐';t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');};
+      update();
+      t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);update();});
+    })();
+  </script>
+</body>
+</html>
